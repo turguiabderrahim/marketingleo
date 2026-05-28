@@ -1,6 +1,20 @@
 (function ($) {
     "use strict";
 
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        $('body').addClass('dark-mode');
+        $('#themeToggle i').removeClass('bi-moon-fill').addClass('bi-sun-fill');
+    }
+
+    $('#themeToggle').click(function () {
+        $('body').toggleClass('dark-mode');
+
+        var isDark = $('body').hasClass('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        $('#themeToggle i').toggleClass('bi-moon-fill', !isDark).toggleClass('bi-sun-fill', isDark);
+    });
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -53,30 +67,6 @@
         delay: 10,
         time: 2000
     });
-
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        margin: 25,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            992:{
-                items:2
-            }
-        }
-    });
-
 
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({

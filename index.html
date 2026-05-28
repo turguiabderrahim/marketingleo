@@ -22,7 +22,6 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -46,8 +45,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <!--<h1 class="m-0">Marketing Leo</h1>-->
+                <a href="#home" class="navbar-brand p-0">
                     <img src="img/MarketingLeo.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -55,40 +53,26 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="index.html" class="nav-item nav-link">About</a>
-                        <a href="index.html" class="nav-item nav-link">Service</a>
-                        <a href="index.html" class="nav-item nav-link">Project</a>
-                        <!--<div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>-->
-                        <a href="index.html" class="nav-item nav-link">Contact</a>
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#services" class="nav-item nav-link">Service</a>
+                        <a href="#projects" class="nav-item nav-link">Project</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
-                   <!-- <div class="nav-item dropdown">
-                            <a href="#" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block nav-link dropdown-toggle " data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>-->
-                    <a href="" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block start" style="">Read More</a>
+                    <button id="themeToggle" class="theme-toggle ms-lg-3" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
                 </div>
             </nav>
 
-            <div class="container-xxl bg-primary hero-header">
+            <div id="home" class="container-xxl bg-primary hero-header">
                 <div class="container px-lg-5">
                     <div class="row g-5 align-items-end">
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="text-white mb-4 animated slideInDown">Marketing Leo : A Digital Agency Of Inteligents & Creative People</h1>
                             <p class="text-white pb-3 animated slideInDown">Marketing Leo Company for Marketing Services was established in 2014 and since that time the company has contributed to the development of companies and has made great strides in developing large and medium companies and providing them with the latest methods of marketing and advertising</p>
-                            <a href="" class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Get Started</a>
-                            <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                            <a href="#services" class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Get Started</a>
+                            <a href="#contact" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
                             <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
@@ -101,7 +85,7 @@
 
 
         <!-- Feature Start -->
-        <div class="container-xxl py-5">
+        <div id="about" class="container-xxl py-5">
             <div class="container py-5 px-lg-5">
                 <div class="row g-4">
                     <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
@@ -170,7 +154,6 @@
                                 <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
-                        <a href="" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">Read More</a>
                     </div>
                     <div class="col-lg-6">
                         <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png">
@@ -209,10 +192,8 @@
             </div>
         </div>
         <!-- Facts End -->
-
-
         <!-- Service Start -->
-        <div class="container-xxl py-5">
+        <div id="services" class="container-xxl py-5">
             <div class="container py-5 px-lg-5">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
                     <p class="section-title text-secondary justify-content-center"><span></span>Our Services<span></span></p>
@@ -226,7 +207,7 @@
                             </div>
                             <h5 class="mb-3">SEO Optimization</h5>
                             <p class="m-0">Improving the appearance of the site in search engines and improving the smoothness of the site to make it easier to identify it's content by Google .</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="#contact"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -236,7 +217,7 @@
                             </div>
                             <h5 class="mb-3">Web Design</h5>
                             <p class="m-0">Designing web pages with the highest quality and the best possible ways in order to facilitate access to them and to ensure the best user experience, smoothness and access.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="#contact"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -246,7 +227,7 @@
                             </div>
                             <h5 class="mb-3">Social Media Marketing</h5>
                             <p class="m-0">Doing the best marketing whether on a local or global level, by team specialized in marketing, buying and selling , product or telephone application .</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="#contact"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -255,8 +236,8 @@
                                 <i class="fa fa-mail-bulk fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Email Marketing</h5>
-                            <p class="m-0">The use of email within your marketing efforts to promote a business’s products and services, as well as incentivize customer loyalty. It can also be a softer sell to target your audience .</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <p class="m-0">The use of email within your marketing efforts to promote a business's products and services, as well as incentivize customer loyalty. It can also be a softer sell to target your audience .</p>
+                            <a class="btn btn-square" href="#contact"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -266,7 +247,7 @@
                             </div>
                             <h5 class="mb-3">PPC Advertising</h5>
                             <p class="m-0">we offre PPC is associated with first-tier search engines . With search engines, then we advertising  typically bid on keyword phrases relevant to their target market  are clicked.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="#contact"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -276,7 +257,7 @@
                             </div>
                             <h5 class="mb-3">App Development</h5>
                             <p class="m-0">Developing mobile applications using the best technologies , whether they are games, software , tools and building throught a clean user experience that is free from technical Errors.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                            <a class="btn btn-square" href="#contact"><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -306,7 +287,7 @@
 
 
         <!-- Projects Start -->
-        <div class="container-xxl py-5">
+        <div id="projects" class="container-xxl py-5">
             <div class="container py-5 px-lg-5">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
                     <p class="section-title text-secondary justify-content-center"><span></span>Our Projects<span></span></p>
@@ -328,12 +309,12 @@
                                 <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="#contact"><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
                                 <p class="text-primary fw-medium mb-2">UI / UX Design</p>
-                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</a>
+                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</h5>
                             </div>
                         </div>
                     </div>
@@ -343,12 +324,12 @@
                                 <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="#contact"><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
                                 <p class="text-primary fw-medium mb-2">UI / UX Design</p>
-                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</a>
+                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</h5>
                             </div>
                         </div>
                     </div>
@@ -358,12 +339,12 @@
                                 <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="#contact"><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
                                 <p class="text-primary fw-medium mb-2">UI / UX Design</p>
-                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</a>
+                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</h5>
                             </div>
                         </div>
                     </div>
@@ -373,12 +354,12 @@
                                 <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="#contact"><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
                                 <p class="text-primary fw-medium mb-2">UI / UX Design</p>
-                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</a>
+                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</h5>
                             </div>
                         </div>
                     </div>
@@ -388,12 +369,12 @@
                                 <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="#contact"><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
                                 <p class="text-primary fw-medium mb-2">UI / UX Design</p>
-                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</a>
+                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</h5>
                             </div>
                         </div>
                     </div>
@@ -403,12 +384,12 @@
                                 <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="#contact"><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
                                 <p class="text-primary fw-medium mb-2">UI / UX Design</p>
-                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</a>
+                                <h5 class="lh-base mb-0">Digital Agency Website Design And Development</h5>
                             </div>
                         </div>
                     </div>
@@ -416,49 +397,6 @@
             </div>
         </div>
         <!-- Projects End -->
-
-
-        <!-- Testimonial Start -->
-      <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <p class="section-title text-secondary justify-content-center"><span></span>Testimonial<span></span></p>
-                <h1 class="text-center mb-5">What Say Our Clients!</h1>
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 65px; height: 65px;">
-                            <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 65px; height: 65px;">
-                            <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 65px; height: 65px;">
-                            <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!-- Testimonial End -->
-
 
         <!-- Team Start -->
         <div class="container-xxl py-5">
@@ -476,10 +414,10 @@
                                 <span>CEO & Founder</span>
                             </div>
                             <div class="d-flex justify-content-center p-4">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-square mx-1" href="#contact"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href="#contact"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href="https://Instagram.com/marketingleo.official"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square mx-1" href="#contact"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -491,10 +429,10 @@
                                 <span>Web Developer</span>
                             </div>
                             <div class="d-flex justify-content-center p-4">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-square mx-1" href="#contact"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href="#contact"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href="https://Instagram.com/marketingleo.official"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square mx-1" href="#contact"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -506,10 +444,10 @@
                                 <span>SEO Expert</span>
                             </div>
                             <div class="d-flex justify-content-center p-4">
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square mx-1" href="#contact"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href="#contact"><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square mx-1" href="https://Instagram.com/marketingleo.official"><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-square mx-1" href="#contact"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -517,10 +455,9 @@
             </div>
         </div>
         <!-- Team End -->
-        
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.2s">
+        <div id="contact" class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
@@ -529,19 +466,16 @@
                         <p><i class="fa fa-phone-alt me-3"></i>+212634914137</p>
                         <p><i class="fa fa-envelope me-3"></i>contact@marketingleo.com</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#contact"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#contact"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://Instagram.com/marketingleo.official"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#contact"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                     <!--   <a class="btn btn-link" href="">Career</a>-->
+                        <a class="btn btn-link" href="#about">About Us</a>
+                        <a class="btn btn-link" href="#contact">Contact Us</a>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Gallery<span></span></p>
@@ -580,15 +514,12 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="index.html">Marketing Leo</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#home">Marketing Leo</a>, All Right Reserved. 
 							Designed By <a class="border-bottom" href="https://tourguiabderrahim.netlify.app">Tourgui abderrahim</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="index.html">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
+                                <a href="#home">Home</a>
                             </div>
                         </div>
                     </div>
@@ -597,11 +528,9 @@
         </div>
         <!-- Footer End -->
 
-
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
-
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -609,7 +538,6 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
